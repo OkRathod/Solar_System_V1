@@ -1,0 +1,68 @@
+body{
+  margin: 0;
+  top: 0;
+  left: 0;
+  /* scroll-behavior:none; */
+}
+canvas{
+  position: fixed;
+  top:0;
+  left:0;
+}
+
+main{
+  position: absolute;
+}
+button{
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+iframe{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  border: 1px solid white;
+}
+
+section{
+  color: white;
+  height: fit-content;
+  width: 380px;
+  border-radius: 10px;
+  border: 1px solid white;
+  font-family: "Oswald", sans-serif;
+  margin: 10px;
+  padding: 10px;
+  /* scroll-behavior: smooth; */
+}
+
+h1{
+  color: white;
+  text-align: center;
+}
+
+img{
+width:100%;
+height: 100%;
+border:1px solid white;
+border-radius: 10px;
+}
+
+.slide{
+  width: 380px;
+  height:200px;
+  background-color: white;
+  color:black;
+}
+header{
+  width:100vw;
+  height:50px;
+}
+.menu{
+  width:fit-content;
+  height: 10px;
+  background-color:white;
+}
