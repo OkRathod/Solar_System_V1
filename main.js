@@ -4,7 +4,7 @@ import * as THREE from 'three';
 
 import { OrbitControls } from './node_modules/three/examples/jsm/Addons.js';
 import { gsap } from 'gsap/gsap-core';
-import sun from "./Textures/8k_sun.jpg"
+
 
 
 const scene = new THREE.Scene();
@@ -18,7 +18,7 @@ const renderer = new THREE.WebGLRenderer({
 renderer.setPixelRatio(window.devicePixelRatio);
 renderer.setSize(window.innerWidth, window.innerHeight);
 camera.position.set(-20, 0, 0);
-const suntexture = new THREE.TextureLoader().load(sun);
+const suntexture = new THREE.TextureLoader().load('./Textures/8k_sun.jpg');
 const sun = new THREE.Mesh(
   new THREE.SphereGeometry(10, 100, 100),
   new THREE.MeshBasicMaterial({ map: suntexture })
@@ -232,7 +232,7 @@ scene.add(spaceTexture)
 var x = 1;
 
 function Fetching() {
-  fetch('./public/info.json').then(
+  fetch('./info.json').then(
     response => response.json()
   ).then(
     data => {
