@@ -232,7 +232,7 @@ scene.add(spaceTexture)
 var x = 1;
 
 function Fetching() {
-  fetch('./info.json').then(
+  fetch('./public/info.json').then(
     response => response.json()
   ).then(
     data => {
