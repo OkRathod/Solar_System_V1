@@ -1,0 +1,8 @@
+{
+  "routes": [
+    {
+      "src": "/models/(.*)",
+      "dest": "/public/models/$1"
+    }
+  ]
+}
